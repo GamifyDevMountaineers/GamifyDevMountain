@@ -7,7 +7,10 @@ var usersSchema = new Schema({
     lastName: { type: String },
     email: { type: String },
     password: { type: String },
-    cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'cohorts'  },
+    cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'cohorts' },
+    badgesRequested: { type: [{ type: mongoose.Schema.Type.ObjectId, ref: 'badges' }], default: [] },
+    badgesAwarded: { type: [{ type: mongoose.Schema.Type.ObjectId, ref: 'badges' }], default: [] },
+    earnedPoints: { type: Number, default: 0 },
     role: { type: [{}] }
 });
 

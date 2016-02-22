@@ -7,7 +7,7 @@ var badgesSchema = new Schema({
     pointValue: {
         easy: {type: Number, default: 5 },
         medium: {type: Number, default: 10 },
-        hard: {type: Number, default: 15 }
+        hard: {type: Number, default: 20 }
     },
     category: { type: mongoose.Schema.Type.ObjectId, ref: 'categories' }
 });
