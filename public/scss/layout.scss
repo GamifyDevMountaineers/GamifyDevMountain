@@ -1,0 +1,14 @@
+// Imports
+@import "variables";
+@import "mixins";
+
+// .pageHeader { @include header }
+
+.top {
+  width: 100vw;
+  height: 500px;
+}
+
+%button: {
+  
+}
