@@ -54,7 +54,8 @@
 // @extend -inherits properties from a pre-existing tag
   // extends keep us from re-writing code, keeping the file sizes small, and easily searchable, responsible for outputting clean dry CSS.
 
-//Maps: are just like js objects with key/value pairs which can be comprised of any sass data type.
+//Maps: are just like javascript objects with key/value pairs which can be comprised of any sass data type.
+
 /*
 $mapNamehere: {
   background: red,
@@ -68,9 +69,6 @@ $mapNamehere: {
 // @at-root -directive which places contained definitions at the root of the stylesheet, regarless of current nesting.
 
 // unique-id() -directive returns a guaranteed unique CSS identifier to the current run of Sass.
-
-
-
 
 
 // Drying out mixins

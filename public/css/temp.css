@@ -1,13 +1,11 @@
 * {
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
-outline: 1px solid red;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid red;
 }
 
-body {
-
-}
+body {}
 
 .header {
   width: 100%;
@@ -39,15 +37,18 @@ body {
   height: 50px;
   background-color: grey;
 }
+
 .innerTopWrap {
   padding: 0px 20px;
   border-radius: 3px;
 }
+
 .topBodyWrap {
   background-color: grey;
   height: 45vh;
   width: 100vw;
 }
+
 .picNameWrap {
   justify-content: center;
   width: 150px;
@@ -55,8 +56,8 @@ body {
   padding: 5px;
   position: absolute;
   top: 115px;
-
 }
+
 .profilePic {
   border-radius: 3px;
   width: 140px;
@@ -65,8 +66,8 @@ body {
   background-size: contain;
   background-size: cover;
   top: 2px;
-
 }
+
 .name {
   color: black;
   font-family: helvetica;
@@ -85,4 +86,49 @@ body {
   top: 20px;
   position: relative;
   left: 170px;
+}
+
+
+/*######## Achievement Icons ########*/
+
+.achievmentWrap {
+  position: relative;
+  top: 23px;
+  left: 23px;
+  width: 128px;
+  height: 128px;
+}
+
+
+
+
+#clipPolygon {
+  position: absolute;
+  float: left;
+  left: 50px;
+}
+
+.shimmeringBox {
+  -webkit-clip-path: polygon(495px 289px, 459px 186px, 553px 123px, 443px 130px, 407px 33px, 361px 127px, 250px 128px, 335px 194px, 301px 283px, 401px 226px);
+  width: 700px;
+  height: 1200px;
+  left: 0px;
+  background-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(313deg, #e3ff00, #fffec8, #f9c905);
+  background-size: 600% 600%;
+  animation: AnimationName 2s ease infinite;
+
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 49%
+  }
+  50% {
+    background-position: 100% 52%
+  }
+  100% {
+    background-position: 0% 49%
+  }
 }

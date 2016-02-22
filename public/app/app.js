@@ -1,4 +1,4 @@
-var app = angular.module("gamify", ['ui.router'])
+var app = angular.module("GamifyDevMountain", ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider ) {
   $urlRouterProvider.otherwise( '/landing' );

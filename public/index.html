@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="gamify">
+<html ng-app="GamifyDevMountain">
 
 <head>
   <meta charset="utf-8">
@@ -9,42 +9,9 @@
 
 <body ng-controller="mainCtrl">
 
-  <!-- header area -->
-  <div class="header">
-    This is a header
-    <div class="btnWrap">
-      <div class="headerBtn" type="button">
-        button two
-      </div>
-      <div class="headerBtn" type="button">
-        button one
-      </div>
-    </div>
+
+  <div class="shimmeringBox">
   </div>
-
-  <!-- top Body -->
-  <div class="topBodyWrap">
-    <div class="innerTopWrap">
-      <div class="picNameWrap">
-        <div class="profilePic">
-          <img class= "profilePic" src="ProfilePlaceholderSuit.png"/>
-        </div>
-        <div class="name">
-          student name
-        </div>
-      </div>
-
-  <!-- top Right body -->
-      <div class="topRightBody">
-
-      </div>
-    </div>
-  </div>
-
-
-  <!-- bottom body -->
-
-
 
 
 
@@ -54,16 +21,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
+
+  <!-- controllers -->
+  <script src="./app/routes/admin/adminCrudCtrl.js"></script>
+  <script src="./app/routes/admin/landingCtrl.js"></script>
+
   <!-- Custom Directives -->
 
-  <!-- Modals -->
-
-  <!-- Routes -->
-  <!-- <script src="./app/routes/admin/adminCrudCtrl.js"></script>
-    <script src="./app/routes/admin/landingCtrl.js"></script> -->
-
-  <!-- NOTE: bundle.js is for webpack, maybe gulp -->
-  <!-- <script src="bundle.js"></script> -->
+  <!-- services -->
 </body>
 
 </html>
