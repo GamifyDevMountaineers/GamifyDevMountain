@@ -1,4 +1,4 @@
-var recentAwards = require('./../models/recentAwards.js');
+var cards = require('./../models/cards.js');
 module.exports = {
     /* C */
     /* R */

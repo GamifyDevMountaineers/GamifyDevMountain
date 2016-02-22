@@ -1,4 +1,4 @@
-var achievements = require('./../models/achievements.js');
+var categories = require('./../models/categories.js');
 module.exports = {
     /* C */
     /* R */
