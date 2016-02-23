@@ -2,12 +2,18 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
 
 .config( function ( $stateProvider, $urlRouterProvider ) {
   $urlRouterProvider.otherwise( '/main' );
-
-  var adminCrudState = {
+  var landingState = {
     name: 'adminCrud',
     url: '/adminCrud',
-    templateUrl: './app/routes/admin/adminCrudTmpl.html',
+    templateUrl: './html/adminCrudTmpl.html',
     controller: 'adminCrudCtrl'
+  };
+
+  var profileState = {
+    name: 'profile',
+    url: '/profile',
+    templateUrl: './html/profileTmpl.html',
+    controller: 'profileCtrl'
   };
 
   var studentState = {
@@ -38,7 +44,7 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
 
   $stateProvider
     .state( mainState )
-    .state( adminCrudState )
     .state( studentState )
+    .state( adminCrudState )
 
 } );

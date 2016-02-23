@@ -1,13 +1,20 @@
 //Core imports
 @import "variables";
 @import "mixins";
-@import "layout";
 @import "keyframes";
-@import "registration";
 @import "mainState";
 @import "index";
+@import "header";
 
 
+* {
+  outline: 1px solid red;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
 // alert modal
 .alert {

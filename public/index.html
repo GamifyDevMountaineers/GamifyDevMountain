@@ -2,15 +2,22 @@
 <html ng-app="GamifyDevMountain">
 
 <head>
-    <meta charset="utf-8">
-    <title>GamifyDevMountain</title>
-
-    <!--Styles-->
-    <link rel="stylesheet" href="./css/core.css">
-
+  <meta charset="utf-8">
+  <title>Dev Mountain Achievements</title>
+  <meta charset="utf-8">
+  <title>DevMountain Acheivements</title>
+  <link rel="stylesheet" href="./css/core.css">
 </head>
 
 <body ng-controller="mainCtrl">
+
+  <header-dir></header-dir>
+  <!-- <div class="shimmeringBox">
+  </div> -->
+  <ui-view></ui-view>
+
+
+  <body ng-controller="mainCtrl">
 
     <!--Ui-Router-->
     <ui-view></ui-view>
@@ -26,7 +33,6 @@
     <!--Controllers-->
     <script src="./js/controllers/adminCtrl.js"></script>
     <script src="./js/controllers/mainCtrl.js"></script>
-    <script src="./js/controllers/studentCtrl.js"></script>
     <!--<script src="./js/controllers/profileCtrl.js"></script>-->
     <!--<script src="./js/controllers/viewFrameCtrl.js"></script>-->
     <!--<script src="./js/controllers/headerCtrl.js"></script>-->
@@ -38,6 +44,13 @@
 
     <!--Services-->
     <script src="./js/services/mainSvc.js"></script>
-</body>
+
+    <!-- controllers -->
+    <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./js/controllers/viewFrameCtrl.js"></script>
+    <script src="./js/controllers/headerCtrl.js"></script>
+
+
+  </body>
 
 </html>

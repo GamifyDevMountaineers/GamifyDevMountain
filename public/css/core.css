@@ -17,14 +17,41 @@ body {
   height: 98.5%;
   width: 98.75%; }
 
-.alert, .register {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-  font: 100% "helvetica, sans-serif";
-  color: "black"; }
+#headerWrapper {
+  color: #bdbdbd;
+  width: 100vw;
+  background-color: #444444;
+  font-size: proxima-nova;
+  max-height: 70px; }
+  #headerWrapper:active {
+    color: #57BDE8; }
 
-.register {
-  border-color: "#444444";
-  padding: 10px; }
+#header {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  right: 20px;
+  padding: 0px;
+  max-width: 400px; }
+
+#userPic {
+  display: inline-block;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("./../media/ProfilePlaceholderSuit.png");
+  object-fit: contain; }
+
+#userName {
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 1.5em;
+  font-family: helvetica, sans-serif; }
+
+.buttons {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  font-family: helvetica, sans-serif; }
