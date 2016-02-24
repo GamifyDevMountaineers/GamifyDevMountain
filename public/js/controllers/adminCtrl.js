@@ -8,9 +8,9 @@ angular.module( "GamifyDevMountain" )
     $scope.toggleDirs = function ( selectedDir ) {
       console.log( selectedDir );
       $scope.activeDir.student = false;
-      $scope.activeDir.pie = false;
-      $scope.activeDir.popcorn = false;
-      $scope.activeDir.popsicle = false;
+      $scope.activeDir.badgeAdmin = false;
+      $scope.activeDir.cohorts = false;
+      $scope.activeDir.cardAdmin = false;
       $scope.activeDir.poptart = false;
       $scope.activeDir[ selectedDir ] = true;
       console.log( $scope.activeDir );
@@ -18,6 +18,36 @@ angular.module( "GamifyDevMountain" )
 
 
     // ####### ui-grid stuff ####### \\
+    $scope.gridData = [];
+    $scope.activeData = function(selected) {
+      console.log(selected);
+      $scope.gridData[selected] = 'true';
+      console.log($scope.gridData);
+    }
+
+    $scope.thisData = [
+      {
+        "firstName": "Box",
+        "lastName": "Barney"
+      },
+      {
+        "firstName": "Sketer",
+        "lastName": "Skeetegrew"
+      },
+      {
+        "firstName": "Florraine",
+        "lastName": "Flise",
+        "company": "Flomveyer",
+        "employed": false
+     },
+      {
+        "firstName": "Prancy",
+        "lastName": "Praters",
+        "company": "Pruelton",
+        "employed": false
+      }
+    ];
+
     $scope.myData = [
       {
         "firstName": "Cox",
@@ -46,7 +76,7 @@ angular.module( "GamifyDevMountain" )
       columnDefs: [
         { name: 'field1', enableSorting: false },
         { name: 'field2' },
-        { name: 'field3', visible: false }
+        { name: 'field3', enableSorting: true }
       ]
     };
 

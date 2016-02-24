@@ -1,15 +1,18 @@
 //Core imports
 @import "variables";
 @import "mixins";
-@import "layout";
-@import "header";
 @import "keyframes";
-@import "leftNavArea";
+
+// layout Directive Imports
 @import "admin";
-@import "students";
-@import "mentors";
+@import "grid";
+@import "header";
+@import "layout";
+@import "leftNavArea";
 
 //Modules imports
+@import "students";
+@import "mentors";
 @import "login";
 @import "register";
 

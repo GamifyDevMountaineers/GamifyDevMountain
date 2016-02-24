@@ -1,41 +1,3 @@
-#headerWrapper {
-  color: #bdbdbd;
-  background-color: #444444;
-  font-size: proxima-nova;
-  max-height: 70px; }
-  #headerWrapper:active {
-    color: #57BDE8; }
-
-#header {
-  display: flex;
-  position: absolute;
-  height: 50px;
-  right: 20px;
-  padding: 0px;
-  max-width: 400px; }
-
-#userPic {
-  display: inline-block;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-image: url("./../media/Profile.png");
-  background-size: contain; }
-
-#userName {
-  display: inline-block;
-  padding: 10px;
-  padding-right: 20px;
-  font-size: 1.5em;
-  font-family: helvetica, sans-serif; }
-
-.buttons {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  font-family: helvetica, sans-serif; }
-
 @keyframes shimmerGold {
   0% {
     background-position: 0% 49%; }
@@ -43,25 +5,6 @@
     background-position: 100% 52%; }
   100% {
     background-position: 0% 49%; } }
-
-.leftNavAreaDirWrap {
-  position: absolute;
-  width: 140px;
-  padding: 1px;
-  height: calc(100vh - 50px); }
-
-.leftNavArea {
-  position: relative;
-  padding: 20px;
-  top: 20px;
-  width: 100px;
-  height: 300px;
-  background-color: #444444;
-  color: #bdbdbd; }
-
-.lefNavArea p {
-  border: 1px solid #2AABE2;
-  padding: 2px; }
 
 .adminWrap {
   background-color: #202020;
@@ -146,13 +89,75 @@
   100% {
     background-position: 0 49%; } }
 
-.studentsDirWrap {
+.gridDirWrap {
   position: relative;
-  left: calc(50% - 250px); }
+  left: calc(50% - 250px);
+  width: 1600px; }
+
+.gridWrap {
+  width: 1600px;
+  height: 300px; }
 
 .myGrid {
-  width: 500px;
-  height: 250px; }
+  width: 1500px;
+  height: 650px; }
+
+#headerWrapper {
+  color: #bdbdbd;
+  background-color: #444444;
+  font-size: proxima-nova;
+  max-height: 70px; }
+  #headerWrapper:active {
+    color: #57BDE8; }
+
+#header {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  right: 20px;
+  padding: 0px;
+  max-width: 400px; }
+
+#userPic {
+  display: inline-block;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("./../media/Profile.png");
+  background-size: contain; }
+
+#userName {
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 1.5em;
+  font-family: helvetica, sans-serif; }
+
+.buttons {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  font-family: helvetica, sans-serif; }
+
+.leftNavAreaDirWrap {
+  position: absolute;
+  width: 140px;
+  padding: 1px;
+  height: calc(100vh - 50px); }
+
+.leftNavArea {
+  position: relative;
+  padding: 20px;
+  top: 20px;
+  width: 100px;
+  height: 300px;
+  background-color: #444444;
+  color: #bdbdbd; }
+
+.lefNavArea p {
+  border: 1px solid #2AABE2;
+  padding: 2px; }
 
 .studentsDirWrap {
   position: relative;
