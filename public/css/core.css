@@ -19,7 +19,6 @@ body {
 
 #headerWrapper {
   color: #bdbdbd;
-  width: 100vw;
   background-color: #444444;
   font-size: proxima-nova;
   max-height: 70px; }
@@ -40,8 +39,8 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-image: url("./../media/ProfilePlaceholderSuit.png");
-  object-fit: contain; }
+  background-image: url("./../media/Profile.png");
+  background-size: contain; }
 
 #userName {
   display: inline-block;
@@ -54,4 +53,141 @@ body {
   display: inline-block;
   width: 100px;
   height: 50px;
-  font-family: helvetica, sans-serif; }
+}
+@keyframes shimmerGold {
+  0% {
+    background-position: 0% 49%; }
+  50% {
+    background-position: 100% 52%; }
+  100% {
+    background-position: 0% 49%; } }
+
+.leftNavAreaDirWrap {
+  position: absolute;
+  width: 140px;
+  padding: 1px;
+  height: calc(100vh - 50px); }
+
+.leftNavArea {
+  position: relative;
+  padding: 20px;
+  top: 20px;
+  width: 100px;
+  height: 300px;
+  background-color: #444444;
+  color: #bdbdbd; }
+
+.lefNavArea p {
+  border: 1px solid #2AABE2;
+  padding: 2px; }
+
+.adminWrap {
+  background-color: #202020;
+  height: 100vh; }
+
+.foods {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: purple;
+  color: white; }
+
+.adminDirWrap {
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  background-color: green;
+  width: 600px;
+  height: 600px; }
+
+.adminDirs {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: purple;
+  color: white; }
+
+.innerFrame {
+  position: absolute;
+  left: 160px;
+  top: 70px;
+  width: calc(100vw - 200px);
+  height: calc(100vh - 85px);
+  background-size: contain;
+  z-index: 100; }
+
+.shinyDmLogo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: calc(-337px + 50vh);
+  left: calc(-407px + 50vw); }
+
+.clip-circleOne {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  -webkit-clip-path: circle(250px at center);
+  border-radius: 50%;
+  background: linear-gradient(90deg, #57BDE8, #4174F7, #57BDE8);
+  background-size: 600px 600px;
+  animation: AnimationName 3s ease infinite; }
+
+.circleDiv {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #202020;
+  left: 25px;
+  bottom: 25px; }
+
+.svgTwo {
+  -webkit-clip-path: polygon(259px 280px, 480px 278px, 550px 180px, 605px 260px, 530px 260px, 510px 280px, 645px 280px, 550px 145px, 465px 260px, 304px 260px, 415px 90px, 480px 185px, 495px 165px, 415px 45px);
+  background-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #57BDE8, #4A629E, #57BDE8);
+  background-size: 480px 600px;
+  animation: AnimationName 3s ease infinite;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  bottom: -242px;
+  left: -200px;
+  border-radius: 50%; }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0 49%; }
+  50% {
+    background-position: 100% 52%; }
+  100% {
+    background-position: 0 49%; } }
+
+* {
+  outline: 1px solid red; }
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+.alert, .register {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font: 100% helvetica, sans-serif;
+  color: black; }
+
+.register {
+  border-color: #444444;
+  padding: 10px; }
+
+.dmLogoTransp {
+  height: 50px;
+  width: 50px;
+  background-image: url("./../media/DMLogoTransparent.png");
+  background-size: contain; }

@@ -2,18 +2,11 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
 
 .config( function ( $stateProvider, $urlRouterProvider ) {
   $urlRouterProvider.otherwise( '/main' );
-  var landingState = {
+  var adminCrudState = {
     name: 'adminCrud',
     url: '/adminCrud',
     templateUrl: './html/adminCrudTmpl.html',
     controller: 'adminCrudCtrl'
-  };
-
-  var profileState = {
-    name: 'profile',
-    url: '/profile',
-    templateUrl: './html/profileTmpl.html',
-    controller: 'profileCtrl'
   };
 
   var studentState = {
@@ -28,7 +21,7 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
     url: '/main',
     templateUrl: 'html/main.html',
     controller: 'mainCtrl',
-    resolve: {
+    // resolve: {
       // user: function (authService, $state) {
       //     return authService.getCurrentUser().then(function (response) {
       //         if (response.status != 200) {
@@ -39,7 +32,7 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
       //     })
       //     console.log('Resolve in "order"');
       // }
-    }
+    // }
   };
 
   $stateProvider

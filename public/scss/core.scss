@@ -2,9 +2,14 @@
 @import "variables";
 @import "mixins";
 @import "keyframes";
+<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
 @import "mainState";
 @import "index";
 @import "header";
+=======
+@import "leftNavArea";
+@import "admin";
+>>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
 
 
 * {
@@ -27,4 +32,10 @@ body {
   @extend .alert;
   border-color: $dmCharcoal;
   padding: 10px;
+}
+.dmLogoTransp {
+  height: 50px;
+  width: 50px;
+  background-image: url("./../media/DMLogoTransparent.png");
+  background-size: contain;
 }
