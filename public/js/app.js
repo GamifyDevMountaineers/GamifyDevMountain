@@ -6,28 +6,28 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router','ui.grid' ] )
   var mainState = {
     name: 'main',
     url: '/main',
-    templateUrl: './html/main.html',
+    templateUrl: './html/states/main.html',
     controller: 'mainCtrl'
   };
 
   var profileState = {
     name: 'profile',
     url: '/profile',
-    templateUrl: './html/profileTmpl.html',
+    templateUrl: './html/states/profileTmpl.html',
     controller: 'profileCtrl'
   };
 
   var adminState = {
     name: 'admin',
     url: '/admin',
-    templateUrl: './html/adminView.html',
+    templateUrl: './html/states/adminView.html',
     controller: 'adminCtrl'
   };
 
   var studentState = {
     name: 'student',
     url: '/student',
-    templateUrl: './html/studentView.html',
+    templateUrl: './html/states/studentView.html',
     controller: 'studentCtrl'
   };
 
