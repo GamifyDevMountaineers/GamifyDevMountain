@@ -1,4 +1,4 @@
-var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
+var app = angular.module( "GamifyDevMountain", [ 'ui.router','ui.grid' ] )
 
 .config( function ( $stateProvider, $urlRouterProvider ) {
   $urlRouterProvider.otherwise( '/admin' );

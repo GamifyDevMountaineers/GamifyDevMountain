@@ -76,7 +76,6 @@
 .adminDirWrap {
   position: absolute;
   top: 0px;
-  background-color: #57BDE8;
   margin: auto;
   width: 100%;
   height: 100%; }
@@ -146,6 +145,14 @@
     background-position: 100% 52%; }
   100% {
     background-position: 0 49%; } }
+
+.studentsDirWrap {
+  position: relative;
+  left: calc(50% - 250px); }
+
+.myGrid {
+  width: 500px;
+  height: 250px; }
 
 * {
   outline: 1px solid red; }
