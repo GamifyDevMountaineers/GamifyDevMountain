@@ -1,4 +1,5 @@
-angular.module( "GamifyDevMountain" ).directive( "popstartDir", function () {
+angular.module( "GamifyDevMountain" )
+.directive( "poptartDir", function () {
   return {
     templateUrl: './../html/poptartTmpl.html',
     controller: 'adminCtrl',

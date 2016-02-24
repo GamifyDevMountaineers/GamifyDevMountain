@@ -11,12 +11,13 @@
       </div>
     </div>
     <div class="adminDirWrap">
-      {{adminCtrl}}
-      <popsicles-dir ng-show="popsicles"></popsicles-dir>
-      <popcorn-dir ng-show="popcorn"></popcorn-dir>
-      <peanuts-dir ng-show="peanut"></peanuts-dir>
-      <poptart-dir ng-show="poptart"></poptart-dir>
-      <pie-dir ng-show="pie"></pie-dir>
+      <peanuts-dir ng-if="activeDir.peanut == true"></peanuts-dir>
+      <peantuts-dir></peantuts-dir>
+      <pie-dir ng-if="activeDir.pie == true"></pie-dir>
+      <popcorn-dir ng-if="activeDir.popcorn == true"></popcorn-dir>
+      <popsicles-dir ng-if="activeDir.popsicle == true"></popsicles-dir>
+      <poptart-dir ng-if="activeDir.poptart == true"></poptart-dir>
+
     </div>
   </div>
 
