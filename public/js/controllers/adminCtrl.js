@@ -1,35 +1,29 @@
-/* Admin View */
+/* Administrator */
 angular.module("GamifyDevMountain")
     .controller("adminCtrl", function ($scope) {
         $scope.adminCtrl = "adminCtrl";
     });
 
-/* Edit Card */
+/* Cards */
 angular.module("GamifyDevMountain")
-    .controller("editCardCtrl", function ($scope) {
-        $scope.adminCtrl = "editCardCtrl";
+    .controller("cardCtrl", function ($scope) {
+        $scope.adminCtrl = "cardCtrl";
     });
 
-/* Edit Student */
+/* Student */
 angular.module("GamifyDevMountain")
-    .controller("editStudentCtrl", function ($scope) {
-        $scope.adminCtrl = "editStudentCtrl";
+    .controller("studentCtrl", function ($scope) {
+        $scope.adminCtrl = "studentCtrl";
     });
   
-/* View Cohort */
+/* Cohort */
 angular.module("GamifyDevMountain")
-    .controller("viewCohortCtrl", function ($scope) {
-        $scope.adminCtrl = "viewCohortCtrl";
+    .controller("cohortCtrl", function ($scope) {
+        $scope.adminCtrl = "cohortCtrl";
     });
 
-/* View Request */
+/* Badge Request */
 angular.module("GamifyDevMountain")
-    .controller("viewRequestCtrl", function ($scope) {
-        $scope.adminCtrl = "viewRequestCtrl";
-    });
-
-/* View Student */
-angular.module("GamifyDevMountain")
-    .controller("viewStudentCtrl", function ($scope) {
-        $scope.adminCtrl = "viewStudentCtrl";
+    .controller("requestCtrl", function ($scope) {
+        $scope.adminCtrl = "requestCtrl";
     });

@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body ng-controller="mainCtrl">
 
     <!--Ui-Router-->
     <ui-view></ui-view>
@@ -27,11 +27,17 @@
     <script src="./js/controllers/adminCtrl.js"></script>
     <script src="./js/controllers/mainCtrl.js"></script>
     <script src="./js/controllers/studentCtrl.js"></script>
+    <!--<script src="./js/controllers/profileCtrl.js"></script>-->
+    <!--<script src="./js/controllers/viewFrameCtrl.js"></script>-->
+    <!--<script src="./js/controllers/headerCtrl.js"></script>-->
+    <!--<script src="./js/controllers/leftNavAreaCtrl.js"></script>-->
 
     <!--Custom Directives-->
+    <script src="./js/directives/headerDir.js"></script>
+    <script src="./js/directives/leftNavAreaDir.js"></script>
 
     <!--Services-->
-
+    <script src="./js/services/mainSvc.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,8 @@
 @import "layout";
 @import "keyframes";
 @import "registration";
-@import "login";
+@import "mainState";
+@import "index";
 
 
 
@@ -20,6 +21,3 @@
   border-color: $dmCharcoal;
   padding: 10px;
 }
-
-html { border: 1px solid black; }
-body { border: 1px solid black; }
