@@ -1,3 +1,4 @@
-angular.module("GamifyDevMountain").controller("mainCtrl", function($scope) {
-  
+angular.module("GamifyDevMountain")
+.controller("mainCtrl", function($scope) {
+
 });

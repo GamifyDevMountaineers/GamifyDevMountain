@@ -4,6 +4,8 @@
 @import "layout";
 @import "header";
 @import "keyframes";
+@import "leftNavArea";
+@import "admin";
 
 //Modules imports
 @import "login";
@@ -29,4 +31,10 @@ body {
   @extend .alert;
   border-color: $dmCharcoal;
   padding: 10px;
+}
+.dmLogoTransp {
+  height: 50px;
+  width: 50px;
+  background-image: url("./../media/DMLogoTransparent.png");
+  background-size: contain;
 }

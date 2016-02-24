@@ -1,13 +1,13 @@
-var app = angular.module("GamifyDevMountain", ['ui.router'])
+var app = angular.module( "GamifyDevMountain", [ 'ui.router' ] )
 
-.config(function($stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/landing' );
+.config( function ( $stateProvider, $urlRouterProvider ) {
+  $urlRouterProvider.otherwise( '/admin' );
 
-  var landingState = {
-    name: 'landing',
-    url: '/landing',
-    templateUrl: './html/landingTmpl.html',
-    controller: 'landingCtrl'
+  var mainState = {
+    name: 'main',
+    url: '/main',
+    templateUrl: './html/main.html',
+    controller: 'mainCtrl'
   };
 
   var profileState = {
@@ -17,15 +17,23 @@ var app = angular.module("GamifyDevMountain", ['ui.router'])
     controller: 'profileCtrl'
   };
 
-  var viewFrameState = {
-    name: 'viewFrame',
-    url: '/viewFrame',
-    templateUrl: './html/viewFrameTmpl.html',
-    controller: 'viewFrameCtrl'
-  }
+  var adminState = {
+    name: 'admin',
+    url: '/admin',
+    templateUrl: './html/adminView.html',
+    controller: 'adminCtrl'
+  };
+
+  var studentState = {
+    name: 'student',
+    url: '/student',
+    templateUrl: './html/studentView.html',
+    controller: 'studentCtrl'
+  };
 
   $stateProvider
-    .state( landingState )
+    .state( mainState )
     .state( profileState )
-    .state( viewFrameState )
+    .state( adminState )
+    .state( studentState )
 } );

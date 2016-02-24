@@ -1,3 +1,3 @@
-angular.module("GamifyDevMountain").controller("landingCtrl", function($scope) {
+angular.module("GamifyDevMountain").controller("mainCtrl", function($scope) {
 
 });
