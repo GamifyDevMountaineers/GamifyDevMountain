@@ -1,0 +1,30 @@
+.mainState {
+  color: white;
+  border: 1px solid #64640a;
+  background-color: #0a6464;
+  height: 98.5%;
+  width: 98.75%; }
+
+html {
+  border: 1px solid white;
+  background-color: black;
+  height: 850px;
+  width: 1800px; }
+
+body {
+  border: 1px solid white;
+  background-color: #323232;
+  height: 98.5%;
+  width: 98.75%; }
+
+.alert, .register {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font: 100% "helvetica, sans-serif";
+  color: "black"; }
+
+.register {
+  border-color: "#444444";
+  padding: 10px; }
