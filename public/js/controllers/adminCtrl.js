@@ -3,7 +3,6 @@ angular.module( "GamifyDevMountain" )
   .controller( "adminCtrl", function ( $scope ) {
     $scope.adminCtrl = "adminCtrl";
 
-
     $scope.activeDir = {};
     $scope.toggleDirs = function ( selectedDir ) {
       console.log( selectedDir );

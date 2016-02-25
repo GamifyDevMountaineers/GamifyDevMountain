@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/GamifyDevMountaineers/GamifyDevMountain/issues"
   },
-  "homepage": "https://github.com/GamifyDevMountaineers/GamifyDevMountain#readme"
+  "homepage": "https://github.com/GamifyDevMountaineers/GamifyDevMountain#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-scss": "^0.1.5"
+  }
 }
