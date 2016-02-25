@@ -3,9 +3,13 @@
   left    : calc(50% - 250px);
   width: 500px;
   background-color: $dmCharcoal;
+  @include border-radius($stdRadius);
+
+
 }
 
 .gridHeader {
+  @include border-radius($stdRadius);
   @include pageHeader();
   height: 50px;
   justify-content: center;
