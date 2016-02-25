@@ -41,7 +41,6 @@
   margin: 5px;
   z-index: 150;
   overflow: hidden;
-
   @include border-radius($stdRadius);
 }
 .cardsShallBehave {

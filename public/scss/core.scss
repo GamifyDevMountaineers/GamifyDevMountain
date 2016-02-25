@@ -1,22 +1,21 @@
 //Core imports
-@import "variables";
-@import "mixins";
-@import "keyframes";
-@import "uiGrid";
+@import "coreImports/variables";
+@import "coreImports/mixins";
+@import "coreImports/keyframes";
+@import "coreImports/uiGrid";
 
 // general layout Directive Imports
-@import "admin";
-@import "gridDir";
-@import "header";
-@import "layout";
-@import "leftNavArea";
+@import "layoutFrame/admin";
+@import "layoutFrame/gridDir";
+@import "layoutFrame/header";
+@import "layoutFrame/leftNavArea";
 
 // Modules imports
-@import "card.scss";
-@import "login";
-@import "mentors";
-@import "register";
-@import "students";
+@import "modules/card.scss";
+@import "modules/login";
+@import "modules/mentors";
+@import "modules/register";
+@import "modules/students";
 
 * {
   // outline: 1px solid red;
