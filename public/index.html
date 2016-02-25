@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>DevMountain Acheivements</title>
-  <link rel="stylesheet" href="./css/temp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.css">
+  <link rel="stylesheet" href="./css/core.css">
 </head>
 
 <body ng-controller="mainCtrl">
 
 
-  <div class="shimmeringBox">
-  </div>
+
+  <ui-view></ui-view>
 
 
 
@@ -20,15 +21,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.min.js"></script>
 
-
+  <script src="./js/app.js"></script>
   <!-- controllers -->
-  <script src="./app/routes/admin/adminCrudCtrl.js"></script>
-  <script src="./app/routes/admin/landingCtrl.js"></script>
+  <script src="./js/controllers/mainCtrl.js"></script>
+  <script src="./js/controllers/profileCtrl.js"></script>
+  <script src="./js/controllers/mainCtrl.js"></script>
+  <script src="./js/controllers/adminCtrl.js"></script>
+  <script src="./js/controllers/headerCtrl.js"></script>
+  <script src="./js/controllers/leftNavAreaCtrl.js"></script>
+  <script src="./js/controllers/adminCtrl.js"></script>
+
 
   <!-- Custom Directives -->
+  <script src="./js/directives/directives.js"></script>
+  <!-- <script src="./js/directives/headerDir.js"></script> -->
+  <!-- <script src="./js/directives/leftNavAreaDir.js"></script> -->
+  <!-- <script src="./js/directives/badgeAdminDir.js"></script> -->
+  <!-- <script src="./js/directives/cohortsDir.js"></script> -->
+  <!-- <script src="./js/directives/cardAdminDir.js"></script> -->
+  <!-- <script src="./js/directives/poptartDir.js"></script> -->
+  <!-- <script src="./js/directives/studentsDir.js"></script> -->
+
 
   <!-- services -->
+  <script src="./js/services/mainSvc.js"></script>
+
 </body>
 
 </html>

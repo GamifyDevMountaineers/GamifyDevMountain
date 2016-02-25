@@ -5,6 +5,10 @@
   border-radius        : $stdRadius;
 }
 
+@mixin centerIt {
+  text-align: center;
+  justify-content: center;
+}
 // icon fill color Hover, Active (dynamic properties)
 @mixin iconFill ($default, $dmBlueHover, $dmBlueClick) {
   color: $default;
@@ -19,15 +23,15 @@
 }
 
 // header (static properties)
-@mixin pageHeader ($bgColor: $dmCharcoal, $color: $fontLight, $headerBold: $hdrBoldText, $active: $dmBlueHover) {
+@mixin pageHeader ($bgColor: $dmCharcoal, $color: $fontLight, $headerBold: $hdrBold, $active: $dmBlueHover) {
   color           : $color;
 
   &:active {
     color: $active;
   }
-width           : 100vw;
   background-color: $bgColor;
   font-size       : $hdrBold;
+  max-height      : 70px;
 }
 
 // allows us to calculate font Rem size while using px. use @include font-size(14px); (will return font-size(.8rem).)
@@ -46,7 +50,7 @@ width           : 100vw;
   text-shadow: white($opacity) 0 1px 0;
 }
 
-// hide Text (can't use on elements using em for margins.)
+// hide Text (can't use on elements using (#)em for margins.)
 @mixin hideText {
   font       : 0px/0 a;
   text-shadow: none;
@@ -69,6 +73,11 @@ width           : 100vw;
     }
   }
 }
+
+
+
+
+
 
 // TODO: create icons with pure scss
 // card style templating through altering variables
