@@ -12,28 +12,38 @@ angular.module( "GamifyDevMountain" )
       $scope.activeDir.cohorts = false;
       $scope.activeDir.cardAdmin = false;
       $scope.activeDir.poptart = false;
+      $scope.activeDir.hideLogo = true;
       $scope.activeDir[ selectedDir ] = true;
       console.log( $scope.activeDir );
     }
 
 
+    // ########### Cards ########### \\
+    $scope.cards = [{cardKeyOne: 'CSS'}, {cardKeyOne : 'JS'}, {cardKeyOne: 'HTML'}, {cardKeyOne: 'angular'}, {cardKeyOne: 'Scss'}]
+
+
     // ####### ui-grid stuff ####### \\
+
+    $scope.selected = null;
+
     $scope.gridData = [];
     $scope.activeData = function(selected) {
       console.log(selected);
       $scope.gridData[selected] = 'true';
       console.log($scope.gridData);
+      $scope.selected = selected;
     }
 
+    // NOTE: There is an issue, where if the first objects within the array are smaller, than the others, the default grid view will only display the same amount of values that the first couple objects have, not the full objects'key:value pairs of the larger objects, later in the array.
     $scope.thisData = [
-      {
-        "firstName": "Box",
-        "lastName": "Barney"
-      },
-      {
-        "firstName": "Sketer",
-        "lastName": "Skeetegrew"
-      },
+      // {
+      //   "firstName": "Box",
+      //   "lastName": "Barney"
+      // },
+      // {
+      //   "firstName": "Sketer",
+      //   "lastName": "Skeetegrew"
+      // },
       {
         "firstName": "Florraine",
         "lastName": "Flise",

@@ -3,7 +3,7 @@
   <header-dir></header-dir>
   <left-nav-area-dir></left-nav-area-dir>
   <div class="innerFrame">
-    <div class="shinyDmLogo">
+    <div ng-hide="activeDir.hideLogo" class="shinyDmLogo">
       <div class="clip-circleOne"></div>
       <div class="circleDiv">
       </div>
@@ -14,7 +14,7 @@
       <grid-dir></grid-dir>
       <!-- <students-dir ng-if="activeDir.student == true"></students-dir> -->
       <!-- <cohorts-dir ng-if="activeDir.cohorts == true"></cohorts-dir> -->
-      <badge-admin-dir ng-if="activeDir.badgeAdmin == true"></badge-admin-dir>
+      <!-- <badge-admin-dir ng-if="activeDir.badgeAdmin == true"></badge-admin-dir> -->
       <card-admin-dir ng-if="activeDir.cardAdmin == true"></card-admin-dir>
       <!-- <poptart-dir ng-if="activeDir.poptart == true"></poptart-dir> -->
 

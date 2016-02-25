@@ -5,6 +5,10 @@
   border-radius        : $stdRadius;
 }
 
+@mixin centerIt {
+  text-align: center;
+  justify-content: center;
+}
 // icon fill color Hover, Active (dynamic properties)
 @mixin iconFill ($default, $dmBlueHover, $dmBlueClick) {
   color: $default;
