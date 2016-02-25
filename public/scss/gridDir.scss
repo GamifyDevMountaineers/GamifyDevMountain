@@ -1,0 +1,26 @@
+.gridDirWrap {
+  position: relative;
+  left    : calc(50% - 250px);
+  width: 500px;
+  background-color: $dmCharcoal;
+}
+
+.gridHeader {
+  @include pageHeader();
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+
+}
+.selectedGrid {
+
+}
+.gridWrap {
+  width : 500px;
+  height: 300px;
+}
+
+.myGrid {
+  width : 500px;
+  height: 200px;
+}

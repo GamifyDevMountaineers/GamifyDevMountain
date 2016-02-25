@@ -2,18 +2,35 @@
 @import "variables";
 @import "mixins";
 @import "keyframes";
+<<<<<<< 9e76429832e4f0e8f21b49c540547091e58800d9
 <<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
 @import "mainState";
 @import "index";
+=======
+@import "uiGrid";
+
+// general layout Directive Imports
+@import "admin";
+@import "gridDir";
+>>>>>>> cleaned up ui on students and cohorts, grids are being populated with dummy data from adminCtrl, cards are repeating from adminCtrl. I havent' built out functionality on badges as of yet. Aside from that, admin is looking good. I need to add crud buttons on the left side.
 @import "header";
 =======
 @import "leftNavArea";
 @import "admin";
 >>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
 
+<<<<<<< 9e76429832e4f0e8f21b49c540547091e58800d9
+=======
+// Modules imports
+@import "card.scss";
+@import "login";
+@import "mentors";
+@import "register";
+@import "students";
+>>>>>>> cleaned up ui on students and cohorts, grids are being populated with dummy data from adminCtrl, cards are repeating from adminCtrl. I havent' built out functionality on badges as of yet. Aside from that, admin is looking good. I need to add crud buttons on the left side.
 
 * {
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 body {
   box-sizing: border-box;
