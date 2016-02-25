@@ -1,0 +1,71 @@
+
+.achievmentWrap {
+  position: relative;
+  top: 23px;
+  left: 23px;
+  width: 128px;
+  height: 128px;
+}
+
+.shimmeringBox {
+  -webkit-clip-path: polygon(495px 289px, 459px 186px, 553px 123px, 443px 130px, 407px 33px, 361px 127px, 250px 128px, 335px 194px, 301px 283px, 401px 226px);
+  width: 700px;
+  height: 1200px;
+  left: 0px;
+  background-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(313deg, #e3ff00, #fffec8, #f9c905);
+  background-size: 600% 600%;
+  animation: shimmerGold 2s ease infinite;
+
+}
+
+
+//######## CardAdmin ########\\
+
+.cardAdminWrapper {
+  color: $fontLight;
+  background-color: $dmCharcoal;
+  width: calc(100% - 400px);
+  position: relative;
+  left: 200px;
+  height: 100%;
+  overflow: hidden;
+  @include border-radius($stdRadius);
+
+
+}
+.cardHeader{
+  @include centerIt;
+  padding: 5px;
+  margin: 5px;
+  z-index: 150;
+  overflow: hidden;
+  @include border-radius($stdRadius);
+}
+.cardsShallBehave {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  overflow: hidden;
+  padding: 10px;
+  max-height: 100%;
+  @include border-radius($stdRadius);
+
+  // overflow: scroll;
+
+}
+.cardsDisplayed {
+  @include border-radius($stdRadius);
+  margin: 5px;
+  position: relative;;
+  width: 280px;
+  height: 400px;
+  background-color: $fontLight;
+  color: $dmDarkCharcoal;
+  padding: 10px;
+  // overflow-x: auto;
+  // overflow-y: auto;
+
+}

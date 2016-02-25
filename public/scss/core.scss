@@ -1,13 +1,30 @@
 //Core imports
-@import "variables";
-@import "mixins";
-@import "layout";
-@import "keyframes";
-@import "registration";
-@import "mainState";
-@import "index";
+@import "coreImports/variables";
+@import "coreImports/mixins";
+@import "coreImports/keyframes";
+@import "coreImports/uiGrid";
 
+// general layout Directive Imports
+@import "layoutFrame/admin";
+@import "layoutFrame/gridDir";
+@import "layoutFrame/header";
+@import "layoutFrame/leftNavArea";
 
+// Modules imports
+@import "modules/card.scss";
+@import "modules/login";
+@import "modules/mentors";
+@import "modules/register";
+@import "modules/students";
+
+* {
+  // outline: 1px solid red;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
 // alert modal
 .alert {
@@ -20,4 +37,10 @@
   @extend .alert;
   border-color: $dmCharcoal;
   padding: 10px;
+}
+.dmLogoTransp {
+  height: 50px;
+  width: 50px;
+  background-image: url("./../media/DMLogoTransparent.png");
+  background-size: contain;
 }

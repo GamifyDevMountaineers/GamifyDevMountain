@@ -1,0 +1,89 @@
+@mixin border-radius($stdRadius) {
+  -webkit-border-radius: $stdRadius;
+  -moz-border-radius   : $stdRadius;
+  -ms-border-radius    : $stdRadius;
+  border-radius        : $stdRadius;
+}
+
+@mixin centerIt {
+  text-align: center;
+  justify-content: center;
+}
+// icon fill color Hover, Active (dynamic properties)
+@mixin iconFill ($default, $dmBlueHover, $dmBlueClick) {
+  color: $default;
+
+  &:hover {
+    color: $dmBlueHover;
+  }
+
+  &:active {
+    color: $dmBlueActive;
+  }
+}
+
+// header (static properties)
+@mixin pageHeader ($bgColor: $dmCharcoal, $color: $fontLight, $headerBold: $hdrBold, $active: $dmBlueHover) {
+  color           : $color;
+
+  &:active {
+    color: $active;
+  }
+  background-color: $bgColor;
+  font-size       : $hdrBold;
+  max-height      : 70px;
+}
+
+// allows us to calculate font Rem size while using px. use @include font-size(14px); (will return font-size(.8rem).)
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// letterpress
+@mixin letterPress($opacity) {
+  text-shadow: white($opacity) 0 1px 0;
+}
+
+// hide Text (can't use on elements using (#)em for margins.)
+@mixin hideText {
+  font       : 0px/0 a;
+  text-shadow: none;
+  color      : transparent;
+}
+
+// for nav menus using unordered lists, strips all the default values from an UL.
+@mixin navUl {
+  list-style-type: none;
+  padding        : 0;
+  margin         : 0;
+  overflow       : hidden;
+
+  > li {
+    display: block;
+    float  : left;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+// TODO: create icons with pure scss
+// card style templating through altering variables
+// $styleHalfLife()
+// $styleDevMtn
+// $
+// @mixin card() {
+//   background-color:
+// }
