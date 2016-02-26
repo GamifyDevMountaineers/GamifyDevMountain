@@ -8,6 +8,7 @@ var syntax = require( 'postcss-scss' );
 var autoprefixer = require( 'autoprefixer' );
 
 
+
 gulp.task( 'sass', function () {
   gulp.src( 'public/scss/core.scss' )
     .pipe( sass( {
@@ -49,7 +50,6 @@ gulp.task( 'default', [ 'sass', 'browser-sync' ], function () {
 //     .pipe(sourcemaps.write())
 //     .pipe(gulp.dest('dist'));
 // });
-
 
 // postcss( plugins )
 //   .process( scss, {

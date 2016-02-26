@@ -3,10 +3,6 @@ angular.module( "GamifyDevMountain" )
   .controller( "adminCtrl", function ( $scope ) {
     $scope.adminCtrl = "adminCtrl";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     $scope.activeDir = {};
     $scope.toggleDirs = function ( selectedDir ) {
       console.log( selectedDir );
@@ -18,19 +14,11 @@ angular.module( "GamifyDevMountain" )
       $scope.activeDir.hideLogo = true;
       $scope.activeDir[ selectedDir ] = true;
       console.log( $scope.activeDir );
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       console.log( $scope.cards );
-=======
->>>>>>> master
-=======
->>>>>>> parent of 4b82ea6... cards are now working from the front-end
-    }
 
 
     // ########### Cards ########### \\
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     //the badge image has to be pulled in from a service somewhere, with a different query that matches the badge id to the image.
 
@@ -139,12 +127,6 @@ angular.module( "GamifyDevMountain" )
             } ]
 
           } ]
-=======
-    $scope.cards = [{cardKeyOne: 'CSS'}, {cardKeyOne : 'JS'}, {cardKeyOne: 'HTML'}, {cardKeyOne: 'angular'}, {cardKeyOne: 'Scss'}]
->>>>>>> master
-=======
-    $scope.cards = [{cardKeyOne: 'CSS'}, {cardKeyOne : 'JS'}, {cardKeyOne: 'HTML'}, {cardKeyOne: 'angular'}, {cardKeyOne: 'Scss'}]
->>>>>>> parent of 4b82ea6... cards are now working from the front-end
 
 
     // ####### ui-grid stuff ####### \\
@@ -152,23 +134,10 @@ angular.module( "GamifyDevMountain" )
     $scope.selected = null;
 
     $scope.gridData = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $scope.activeData = function ( selected ) {
-      console.log( selected );
-      $scope.gridData[ selected ] = 'true';
-      console.log( $scope.gridData );
-=======
-=======
->>>>>>> parent of 4b82ea6... cards are now working from the front-end
     $scope.activeData = function(selected) {
       console.log(selected);
       $scope.gridData[selected] = 'true';
       console.log($scope.gridData);
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> parent of 4b82ea6... cards are now working from the front-end
       $scope.selected = selected;
     }
 
@@ -222,8 +191,6 @@ angular.module( "GamifyDevMountain" )
     $scope.gridOptions = {
       enableSorting: true,
       columnDefs: [
-<<<<<<< HEAD
-<<<<<<< HEAD
         {
           name: 'field1',
           enableSorting: false
@@ -235,16 +202,6 @@ angular.module( "GamifyDevMountain" )
           name: 'field3',
           enableSorting: true
         }
-=======
-        { name: 'field1', enableSorting: false },
-        { name: 'field2' },
-        { name: 'field3', enableSorting: true }
->>>>>>> master
-=======
-        { name: 'field1', enableSorting: false },
-        { name: 'field2' },
-        { name: 'field3', enableSorting: true }
->>>>>>> parent of 4b82ea6... cards are now working from the front-end
       ]
     };
 
