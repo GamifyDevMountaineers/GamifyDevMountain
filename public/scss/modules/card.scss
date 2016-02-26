@@ -1,0 +1,20 @@
+
+.achievmentWrap {
+  position: relative;
+  top: 23px;
+  left: 23px;
+  width: 128px;
+  height: 128px;
+}
+
+.shimmeringBox {
+  -webkit-clip-path: polygon(495px 289px, 459px 186px, 553px 123px, 443px 130px, 407px 33px, 361px 127px, 250px 128px, 335px 194px, 301px 283px, 401px 226px);
+  width: 700px;
+  height: 1200px;
+  left: 0px;
+  background-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(313deg, #e3ff00, #fffec8, #f9c905);
+  background-size: 600% 600%;
+  animation: shimmerGold 2s ease infinite;
+}

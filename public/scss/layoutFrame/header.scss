@@ -1,0 +1,37 @@
+#headerWrapper {
+  @include pageHeader();
+}
+
+#header{
+  display: flex;
+  position: absolute;
+  height: 50px;
+  right: 20px;
+  padding: 0px;
+  max-width: 400px;
+}
+
+#userPic {
+  display: inline-block;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("./../media/Profile.png");
+  background-size: contain;
+}
+
+#userName{
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 1.5em;
+  font-family: $stdText;
+}
+
+.buttons {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  font-family: $stdText;
+}

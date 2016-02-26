@@ -1,0 +1,100 @@
+//######## CardAdmin ########\\
+
+.cardAdminWrapper {
+  color: $fontLight;
+  background-color: $dmCharcoal;
+  max-width: calc(100% - 10px);
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  height: 100%;
+  overflow: scroll;
+  max-width: calc();
+  // TODO: media query, that snaps the size of the div to the size of the nearest card that will still fit upon the page.
+
+  @include border-radius($stdRadius);
+}
+.cardHeader{
+  @include centerIt;
+    position: relative;
+    left:0px;
+    height: 20px;
+    background-color: $dmDarkCharcoal;
+    color: $fontLight;
+    padding: 20px;
+    margin: 5px;
+
+  @include border-radius($stdRadius);
+}
+
+
+.cardsShallBehave {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  overflow: scroll;
+  padding: 10px;
+  max-height: 100%;
+  @include border-radius($stdRadius);
+}
+.cardsDisplayed {
+  @include border-radius($stdRadius);
+  margin: 5px;
+  position: relative;;
+  width: 280px;
+  height: 400px;
+  background-color: $fontLight;
+  color: $dmDarkCharcoal;
+  overflow: scroll;
+}
+
+.cardContents {
+  padding: 10px;
+  background: complement($dmDarkCharcoal);
+  margin: 5px;
+  width: 89%;
+  height: 73%;
+  @include border-radius($stdRadius);
+  display: flex;
+  flex-direction: column;
+  color: $fontLight;
+  overflow: scroll;
+}
+.badgesWithinCards {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: $dmDarkCharcoal;
+  border: 1px solid $dmCharcoal;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 5px;
+  @include border-radius($stdRadius);
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+
+}
+.badgeImgWrapper {
+  height: 50px;
+  width: 50px;
+  float: right;
+  flex: 1;
+    img {
+      @extend .badgeImgWrapper;
+    }
+
+}
+.cardRequirements {
+  width: 89%;
+  display: inline-block;
+  // flex: 1;
+}
+
+.badgename {
+  flex: 1;
+}
+.badgeDescription {
+  flex: 2;
+}
