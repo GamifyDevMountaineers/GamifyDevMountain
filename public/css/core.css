@@ -1,5 +1,6 @@
-<<<<<<< 84198b1a086a848b54ec3088e1b992828d5303d6
-=======
+::-webkit-scrollbar {
+  display: none; }
+
 @keyframes shimmerGold {
   0% {
     background-position: 0% 49%; }
@@ -865,14 +866,16 @@ fieldset[disabled] .ui-grid-menu .ui-grid-menu-inner .ui-grid-menu-close-button.
   position: relative;
   height: 500px;
   width: 500px;
-  background-color: green; }
+  background-color: purple;
+  color: white; }
 
 .adminDirWrap {
   position: absolute;
   top: 0px;
   margin: auto;
-  width: 100%;
-  height: 100%; }
+  background-color: green;
+  width: 600px;
+  height: 600px; }
 
 .adminDirs {
   position: relative;
@@ -1099,6 +1102,57 @@ fieldset[disabled] .ui-grid-menu .ui-grid-menu-inner .ui-grid-menu-close-button.
   color: #202020;
   padding: 10px; }
 
+.cardAdminWrapper {
+  color: #bdbdbd;
+  background-color: #444444;
+  width: calc(100% - 400px);
+  position: relative;
+  left: 200px;
+  height: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  border-radius: 13px; }
+
+.cardHeader {
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  z-index: 150;
+  overflow: hidden;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  border-radius: 13px; }
+
+.cardsShallBehave {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  overflow: hidden;
+  padding: 10px;
+  max-height: 100%;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  border-radius: 13px; }
+
+.cardsDisplayed {
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  border-radius: 13px;
+  margin: 5px;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background-color: #bdbdbd;
+  color: #202020;
+  padding: 10px; }
+
 .studentsDirWrap {
   position: relative;
   left: calc(50% - 250px); }
@@ -1129,4 +1183,3 @@ body {
   width: 50px;
   background-image: url("./../media/DMLogoTransparent.png");
   background-size: contain; }
->>>>>>> changed Scss file structure
