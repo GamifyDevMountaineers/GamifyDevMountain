@@ -35,6 +35,16 @@ var app = angular.module( "GamifyDevMountain", [ 'ui.router','ui.grid' ] )
     //     })
     //     console.log('Resolve in "order"');
     // }
+      // user: function (authService, $state) {
+      //     return authService.getCurrentUser().then(function (response) {
+      //         if (response.status != 200) {
+      //             $state.go('login')
+      //         }
+      //         console.log(response);
+      //         return response.data;
+      //     })
+      //     console.log('Resolve in "order"');
+      // }
     // }
   };
 

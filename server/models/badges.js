@@ -14,6 +14,10 @@
 // });
 
 // module.exports = mongoose.model('badges', badgesSchema);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -29,3 +33,7 @@ var badgesSchema = new Schema({
 });
 
 module.exports = mongoose.model('badges', badgesSchema);
+<<<<<<< HEAD
+=======
+>>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
+>>>>>>> master

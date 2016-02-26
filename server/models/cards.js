@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
+>>>>>>> master
 // var mongoose = require('mongoose');
 // var Schema = mongoose.Schema;
 
@@ -15,7 +19,11 @@
 // });
 
 // module.exports = mongoose.model('cards', cardsSchema);
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> master
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -32,3 +40,7 @@ var cardsSchema = new Schema({
 });
 
 module.exports = mongoose.model('cards', cardsSchema);
+<<<<<<< HEAD
+=======
+>>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
+>>>>>>> master
