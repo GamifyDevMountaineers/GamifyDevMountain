@@ -1,10 +1,9 @@
-<<<<<<< HEAD
-=======
-<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
+
+
 // var users = require('./../models/users.js');
 
 // module.exports = {
-    
+
 //     /** C */
 //     createUser: function (req, res, next) {
 //         users.create(req.body, function (err, createUser) {
@@ -12,7 +11,7 @@
 //             res.status(200).json('User Created!', createUser);
 //         })
 //     },
-    
+
 //     /** R */
 //     readUser: function (req, res, next) {
 //         users.find.exec().then(function (err, readUser) {
@@ -20,22 +19,22 @@
 //             else { res.status(200).send('User Data Retrieved!', readUser); }
 //         })
 //     },
-        
+
 //     /** R */
 //     // getCurrentUser: function (req, res, next) {
 //     //     if (!req.user) res.status(401).send('');
 //     //     req.user.password = null;
 //     //     res.status(200).json(req.user);
 //     // },
-        
+
 //     /** U */
 //     updateUser: function (req, res, next) {
 //         users.findByIdAndUpdate(req.params._id, req.body, function (err, updateUser) {
 //             if (err) next(err);
 //             res.status(200).send('User Updated!', updateUser);
 //         })
-//     }, 
-    
+//     },
+
 //     /** D */
 //     deleteUser: function (req, res, next) {
 //         users.findByIdAndRemove(req.query.id, function (err, deleteUser) {
@@ -44,12 +43,11 @@
 //         })
 //     },
 // };
-=======
->>>>>>> master
+
 var users = require('./../models/users.js');
 
 module.exports = {
-    
+
     /** C */
     createUser: function (req, res, next) {
         users.create(req.body, function (err, createUser) {
@@ -57,7 +55,7 @@ module.exports = {
             res.status(200).json('User Created!', createUser);
         })
     },
-    
+
     /** R */
     readUser: function (req, res, next) {
         users.find.exec().then(function (err, readUser) {
@@ -65,22 +63,22 @@ module.exports = {
             else { res.status(200).send('User Data Retrieved!', readUser); }
         })
     },
-        
+
     /** R */
     // getCurrentUser: function (req, res, next) {
     //     if (!req.user) res.status(401).send('');
     //     req.user.password = null;
     //     res.status(200).json(req.user);
     // },
-        
+
     /** U */
     updateUser: function (req, res, next) {
         users.findByIdAndUpdate(req.params._id, req.body, function (err, updateUser) {
             if (err) next(err);
             res.status(200).send('User Updated!', updateUser);
         })
-    }, 
-    
+    },
+
     /** D */
     deleteUser: function (req, res, next) {
         users.findByIdAndRemove(req.query.id, function (err, deleteUser) {
@@ -88,9 +86,4 @@ module.exports = {
             else { res.send('User Deleted!', deleteUser); }
         })
     },
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
->>>>>>> master

@@ -16,7 +16,7 @@ angular.module( "GamifyDevMountain" )
       console.log( $scope.activeDir );
 
       console.log( $scope.cards );
-
+    }
 
     // ########### Cards ########### \\
 
@@ -134,10 +134,10 @@ angular.module( "GamifyDevMountain" )
     $scope.selected = null;
 
     $scope.gridData = [];
-    $scope.activeData = function(selected) {
-      console.log(selected);
-      $scope.gridData[selected] = 'true';
-      console.log($scope.gridData);
+    $scope.activeData = function ( selected ) {
+      console.log( selected );
+      $scope.gridData[ selected ] = 'true';
+      console.log( $scope.gridData );
       $scope.selected = selected;
     }
 
@@ -204,7 +204,6 @@ angular.module( "GamifyDevMountain" )
         }
       ]
     };
-
 
   } );
 

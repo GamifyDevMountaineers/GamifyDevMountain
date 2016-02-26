@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-=======
-<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
+
 angular.module( "GamifyDevMountain" )
-  .controller( "mainCtrl", function ( $scope, $state, authSvc ) {
+  .controller( "mainCtrl", function ( $scope, $state ) {
     $scope.mainCtrl = 'mainCtrl';
     console.log( 'mainCtrl' );
-
+    // temporarily removed authSvc from injection, it was causing errors.
     // $scope.user = {};
     // $scope.login = function () {
     //     authSvc.login($scope.user).then(function () {
@@ -20,13 +18,3 @@ angular.module( "GamifyDevMountain" )
     // };
 
   } );
-=======
->>>>>>> master
-angular.module("GamifyDevMountain")
-.controller("mainCtrl", function($scope) {
-
-});
-<<<<<<< HEAD
-=======
->>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
->>>>>>> master
