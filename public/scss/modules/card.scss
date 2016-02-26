@@ -18,3 +18,54 @@
   background-size: 600% 600%;
   animation: shimmerGold 2s ease infinite;
 }
+
+
+//######## CardAdmin ########\\
+
+.cardAdminWrapper {
+  color: $fontLight;
+  background-color: $dmCharcoal;
+  width: calc(100% - 400px);
+  position: relative;
+  left: 200px;
+  height: 100%;
+  overflow: hidden;
+  @include border-radius($stdRadius);
+
+
+}
+.cardHeader{
+  @include centerIt;
+  padding: 5px;
+  margin: 5px;
+  z-index: 150;
+  overflow: hidden;
+  @include border-radius($stdRadius);
+}
+.cardsShallBehave {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  overflow: hidden;
+  padding: 10px;
+  max-height: 100%;
+  @include border-radius($stdRadius);
+
+  // overflow: scroll;
+
+}
+.cardsDisplayed {
+  @include border-radius($stdRadius);
+  margin: 5px;
+  position: relative;;
+  width: 280px;
+  height: 400px;
+  background-color: $fontLight;
+  color: $dmDarkCharcoal;
+  padding: 10px;
+  // overflow-x: auto;
+  // overflow-y: auto;
+
+>>>>>>> master
+}
