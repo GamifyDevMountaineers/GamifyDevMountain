@@ -9,18 +9,17 @@
   width           : 500px;
   background-color: purple;
   color           : white;
-
 }
 
 .adminDirWrap {
   position: absolute;
   top: 0px;
+  // background-color: $dmBlueHover;
   margin: auto;
-  background-color: green;
-  width: 600px;
-  height: 600px;
-
+  width: 100%;
+  height: 100%;
 }
+
 .adminDirs {
   position        : relative;
   height          : 500px;

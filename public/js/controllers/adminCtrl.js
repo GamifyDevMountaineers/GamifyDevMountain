@@ -3,7 +3,6 @@ angular.module( "GamifyDevMountain" )
   .controller( "adminCtrl", function ( $scope ) {
     $scope.adminCtrl = "adminCtrl";
 
-
     $scope.activeDir = {};
     $scope.toggleDirs = function ( selectedDir ) {
       console.log( selectedDir );
@@ -15,11 +14,119 @@ angular.module( "GamifyDevMountain" )
       $scope.activeDir.hideLogo = true;
       $scope.activeDir[ selectedDir ] = true;
       console.log( $scope.activeDir );
+      console.log( $scope.cards );
     }
 
 
     // ########### Cards ########### \\
-    $scope.cards = [{cardKeyOne: 'CSS'}, {cardKeyOne : 'JS'}, {cardKeyOne: 'HTML'}, {cardKeyOne: 'angular'}, {cardKeyOne: 'Scss'}]
+
+    //the badge image has to be pulled in from a service somewhere, with a different query that matches the badge id to the image.
+
+    $scope.cards = [
+      {
+        cardName: 'CSS Card',
+        otherKey: 'CSS',
+        badges: [ {
+          badgeName: 'badge1',
+          badgeDescription: 'this is a badge'
+          }, {
+          badgeName: 'badge2',
+          badgeDescription: 'this is a description'
+          }, {
+          badgeName: 'badge3',
+          badgeDescription: 'this is an achievement'
+          }, {
+          badgeName: 'badge4',
+          badgeDescription: 'this should reward a badge'
+          }, {
+          badgeName: 'badge5',
+          badgeDescription: 'this is an badge for earning an achievement'
+          } ]
+          },
+      {
+        cardName: 'JS Card',
+        cardKeyOne: 'JS',
+        badges: [ {
+          badgeName: 'badge1',
+          badgeDescription: 'this is a badge'
+            }, {
+          badgeName: 'badge2',
+          badgeDescription: 'this is a description'
+            }, {
+          badgeName: 'badge3',
+          badgeDescription: 'this is an achievement'
+            }, {
+          badgeName: 'badge4',
+          badgeDescription: 'this should reward a badge'
+            }, {
+          badgeName: 'badge5',
+          badgeDescription: 'this is an badge for earning an achievement'
+            } ]
+
+          },
+      {
+        cardName: 'HTML Card',
+        cardKeyOne: 'HTML',
+        badges: [ {
+          badgeName: 'badge1',
+          badgeDescription: 'this is a badge'
+            }, {
+          badgeName: 'badge2',
+          badgeDescription: 'this is a description'
+            }, {
+          badgeName: 'badge3',
+          badgeDescription: 'this is an achievement'
+            }, {
+          badgeName: 'badge4',
+          badgeDescription: 'this should reward a badge'
+            }, {
+          badgeName: 'badge5',
+          badgeDescription: 'this is an badge for earning an achievement'
+            } ]
+
+          },
+      {
+        cardName: 'Angular Card',
+        cardKeyOne: 'angular',
+        badges: [ {
+          badgeName: 'badge1',
+          badgeDescription: 'this is a badge'
+            }, {
+          badgeName: 'badge2',
+          badgeDescription: 'this is a description'
+            }, {
+          badgeName: 'badge3',
+          badgeDescription: 'this is an achievement'
+            }, {
+          badgeName: 'badge4',
+          badgeDescription: 'this should reward a badge'
+            }, {
+          badgeName: 'badge5',
+          badgeDescription: 'this is an badge for earning an achievement'
+            } ]
+
+          },
+      {
+        cardName: 'Scss Card',
+        cardKeyOne: 'Scss',
+        badges: [ {
+          badgeName: 'badge1',
+          badgeDescription: 'this is a badge'
+            }, {
+          badgeName: 'badge2',
+          badgeDescription: 'this is a description'
+            }, {
+          badgeName: 'badge3',
+          badgeDescription: 'this is an achievement'
+            }, {
+          badgeName: 'badge4',
+          badgeDescription: 'this should reward a badge'
+            }, {
+          badgeName: 'badge5',
+          badgeDescription: 'this is an badge for earning an achievement'
+            } ]
+
+          } ]
 
 
     // ####### ui-grid stuff ####### \\
@@ -27,10 +134,10 @@ angular.module( "GamifyDevMountain" )
     $scope.selected = null;
 
     $scope.gridData = [];
-    $scope.activeData = function(selected) {
-      console.log(selected);
-      $scope.gridData[selected] = 'true';
-      console.log($scope.gridData);
+    $scope.activeData = function ( selected ) {
+      console.log( selected );
+      $scope.gridData[ selected ] = 'true';
+      console.log( $scope.gridData );
       $scope.selected = selected;
     }
 
@@ -84,9 +191,17 @@ angular.module( "GamifyDevMountain" )
     $scope.gridOptions = {
       enableSorting: true,
       columnDefs: [
-        { name: 'field1', enableSorting: false },
-        { name: 'field2' },
-        { name: 'field3', enableSorting: true }
+        {
+          name: 'field1',
+          enableSorting: false
+        },
+        {
+          name: 'field2'
+        },
+        {
+          name: 'field3',
+          enableSorting: true
+        }
       ]
     };
 

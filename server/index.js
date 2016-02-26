@@ -1,3 +1,13 @@
+/** Dependants */
+// var express = require('express');
+// var bodyParser = require('body-parser');
+// var session = require('express-session');
+// var mongoose = require('mongoose');
+// var cors = require('cors');
+
+/* Controllers */
+// var usersCtrl = require('./controllers/usersCtrl');
+
 
 // /** Dependants */
 // var express = require('express');
@@ -103,6 +113,7 @@ var cors = require('cors');
 /* Controllers */
 var usersCtrl = require('./controllers/usersCtrl');
 
+>>>>>>> master
 /** Services */
 // var passport = require('./server/services/passport');
 

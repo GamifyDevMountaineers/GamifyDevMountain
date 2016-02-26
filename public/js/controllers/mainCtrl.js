@@ -1,6 +1,5 @@
-<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
 angular.module( "GamifyDevMountain" )
-  .controller( "mainCtrl", function ( $scope, $state, authSvc ) {
+  .controller( "mainCtrl", function ( $scope, $state ) {
     $scope.mainCtrl = 'mainCtrl';
     console.log( 'mainCtrl' );
 
@@ -18,9 +17,3 @@ angular.module( "GamifyDevMountain" )
     // };
 
   } );
-=======
-angular.module("GamifyDevMountain")
-.controller("mainCtrl", function($scope) {
-
-});
->>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.

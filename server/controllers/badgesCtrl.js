@@ -1,8 +1,7 @@
-<<<<<<< edb155bcd03ab7dd7cb3c63cf21d18260907fcdf
 // var badges = require('./../models/badges.js');
 
 // module.exports = {
-    
+
 //     /** C */
 //     createBadge: function (req, res) {
 //         badges.create(req.body).exec(function (err, createBadge) {
@@ -10,7 +9,7 @@
 //             else { res.status(200).json('Badge Added!', createBadge); }
 //         })
 //     },
-    
+
 //     /** R */
 //     readBadge: function (req, res) {
 //         badges.find(req.query).populate('users').exec(function (err, readBadge) {
@@ -18,15 +17,15 @@
 //             else { res.status(200).send('Badge Data Retrieved!', readBadge); }
 //         })
 //     },
-        
+
 //     /** U */
 //     updateBadge: function (req, res) {
 //         badges.findByIdAndUpdate(req.query._id, { $set: req.body }, function (err, updateBadge) {
 //             if (err) { res.status(500).send(err); }
 //             else { res.status(200).send('Badge Updated!', updateBadge); }
 //         })
-//     }, 
-    
+//     },
+
 //     /** D */
 //     deleteBadge: function (req, res) {
 //         badges.findByIdAndRemove(req.query.id, function (err, deleteBadge) {
@@ -35,11 +34,10 @@
 //         })
 //     },
 // };
-=======
 var badges = require('./../models/badges.js');
 
 module.exports = {
-    
+
     /** C */
     createBadge: function (req, res) {
         badges.create(req.body).exec(function (err, createBadge) {
@@ -47,7 +45,7 @@ module.exports = {
             else { res.status(200).json('Badge Added!', createBadge); }
         })
     },
-    
+
     /** R */
     readBadge: function (req, res) {
         badges.find(req.query).populate('users').exec(function (err, readBadge) {
@@ -55,7 +53,7 @@ module.exports = {
             else { res.status(200).send('Badge Data Retrieved!', readBadge); }
         })
     },
-        
+
     /** U */
     updateBadge: function (req, res) {
         badges.findByIdAndUpdate(req.query._id, { $set: req.body }, function (err, updateBadge) {
@@ -63,7 +61,7 @@ module.exports = {
             else { res.status(200).send('Badge Updated!', updateBadge); }
         })
     }, 
-    
+
     /** D */
     deleteBadge: function (req, res) {
         badges.findByIdAndRemove(req.query.id, function (err, deleteBadge) {
@@ -71,5 +69,3 @@ module.exports = {
             else { res.status(200).send('Badge Deleted!', deleteBadge); }
         })
     },
-};
->>>>>>>  built out several directives, currently working on left Nav bar, the current listed directivesin the left nav area are placeholders, not all of them are working.
