@@ -1,0 +1,29 @@
+{
+  "name": "gamify-dev-mountain",
+  "version": "1.0.0",
+  "description": "Dev Mountain Achievements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GamifyDevMountaineers/GamifyDevMountain.git"
+  },
+  "author": "Cole Hartog\u001b[C\u001b[g, Phillip Puckett, Tyson Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GamifyDevMountaineers/GamifyDevMountain/issues"
+  },
+  "homepage": "https://github.com/GamifyDevMountaineers/GamifyDevMountain#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-scss": "^0.1.5"
+  }
+}
