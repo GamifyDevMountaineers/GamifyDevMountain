@@ -9,7 +9,6 @@
 //             else { res.status(200).json('Curriculum Added!', createCurriculum); }
 //         })
 //     },
-
 //     /** R */
 //     readCurriculum: function (req, res) {
 //         curriculums.find(req.query).populate('cards').exec(function (err, readCurriculum) {
@@ -17,7 +16,6 @@
 //             else { res.status(200).send('Curriculum Data Retrieved!', readCurriculum); }
 //         })
 //     },
-
 //     /** U */
 //     updateCurriculum: function (req, res) {
 //         curriculums.findByIdAndUpdate(req.query._id, { $set: req.body }, function (err, updateCurriculum) {
@@ -45,7 +43,6 @@ module.exports = {
             else { res.status(200).json('Curriculum Added!', createCurriculum); }
         })
     },
-
     /** R */
     readCurriculum: function (req, res) {
         curriculums.find(req.query).populate('cards').exec(function (err, readCurriculum) {
@@ -53,14 +50,13 @@ module.exports = {
             else { res.status(200).send('Curriculum Data Retrieved!', readCurriculum); }
         })
     },
-
     /** U */
     updateCurriculum: function (req, res) {
         curriculums.findByIdAndUpdate(req.query._id, { $set: req.body }, function (err, updateCurriculum) {
             if (err) { res.status(500).send(err); }
             else { res.status(200).send('Curriculum Updated!', updateCurriculum); }
         })
-    },
+    }, 
 
     /** D */
     deleteCurriculum: function (req, res) {

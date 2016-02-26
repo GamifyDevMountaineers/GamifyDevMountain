@@ -4,6 +4,8 @@ angular.module( "GamifyDevMountain" )
     console.log( 'mainCtrl' );
 
     // $scope.user = {};
+    // temporarily removed authSvc from injection, it was causing errors.
+  // $scope.user = {};
     // $scope.login = function () {
     //     authSvc.login($scope.user).then(function () {
     //         $state.go('main');

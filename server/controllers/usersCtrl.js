@@ -9,7 +9,6 @@
 //             res.status(200).json('User Created!', createUser);
 //         })
 //     },
-
 //     /** R */
 //     readUser: function (req, res, next) {
 //         users.find.exec().then(function (err, readUser) {
@@ -17,14 +16,12 @@
 //             else { res.status(200).send('User Data Retrieved!', readUser); }
 //         })
 //     },
-
 //     /** R */
 //     // getCurrentUser: function (req, res, next) {
 //     //     if (!req.user) res.status(401).send('');
 //     //     req.user.password = null;
 //     //     res.status(200).json(req.user);
 //     // },
-
 //     /** U */
 //     updateUser: function (req, res, next) {
 //         users.findByIdAndUpdate(req.params._id, req.body, function (err, updateUser) {
@@ -52,7 +49,6 @@ module.exports = {
             res.status(200).json('User Created!', createUser);
         })
     },
-
     /** R */
     readUser: function (req, res, next) {
         users.find.exec().then(function (err, readUser) {
@@ -60,14 +56,12 @@ module.exports = {
             else { res.status(200).send('User Data Retrieved!', readUser); }
         })
     },
-
     /** R */
     // getCurrentUser: function (req, res, next) {
     //     if (!req.user) res.status(401).send('');
     //     req.user.password = null;
     //     res.status(200).json(req.user);
     // },
-
     /** U */
     updateUser: function (req, res, next) {
         users.findByIdAndUpdate(req.params._id, req.body, function (err, updateUser) {

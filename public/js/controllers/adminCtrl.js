@@ -141,6 +141,7 @@ angular.module( "GamifyDevMountain" )
       $scope.selected = selected;
     }
 
+
     // NOTE: There is an issue, where if the first objects within the array are smaller, than the others, the default grid view will only display the same amount of values that the first couple objects have, not the full objects'key:value pairs of the larger objects, later in the array.
     $scope.thisData = [
       // {
