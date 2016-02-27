@@ -1,3 +1,30 @@
-<div class="foods">
-  This is from badgeAdmin.html
+<div class="cardAdminWrapper">
+  <h1 class="cardHeader">Available Badges</h1>
+  <div class="cardsShallBehave">
+    testing...
+    <div class="cardsDisplayed" ng-repeat="badge in badges">
+      testing deep 1
+      <div class="cardHeader">
+        {{badge.badgeName}}
+        testing deep 2
+      </div>
+      <hr>
+      <div class="cardContents">
+        testing deep 3
+        <div class="badgesWithinCards" ng-repeat="badge in card.badges">
+          testing deep 4
+          <span class="badgename">
+            testing deep 5
+            {{badge.badgeName}}
+          </span>
+          <span class="badgeImgWrapper">
+            testing deep 6(img)
+            <img ng-src="badge.badgeImgLink"/>
+          </span>
+        </div>
+        <p>{{card.cardKeyOne}}</p>
+        <span class="cardRequirements"></span>
+      </div>
+    </div>
+  </div>
 </div>
