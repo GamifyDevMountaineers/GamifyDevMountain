@@ -16,6 +16,9 @@ angular.module( "GamifyDevMountain" )
       console.log( $scope.activeDir );
       console.log( $scope.cards );
     }
+    // if ($scope.activeDir[student, badgeAdmin, cohorts, cardAdmin, poptart] == false) {
+    //   $scope.activeDir.hideLogo = true;
+    // }
 
 
     // ########### Cards ########### \\
@@ -205,6 +208,56 @@ angular.module( "GamifyDevMountain" )
         }
       ]
     };
+
+
+    // ############### Badges ################ \\
+
+
+    $scope.badges = [
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+       },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+     },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+      },
+      {
+        badgeName: 'CSS Card',
+        badgeImgLink: './../media/Css100.png',
+     }
+    ]
+
+
+
+
+
+
+
 
 
   } );
