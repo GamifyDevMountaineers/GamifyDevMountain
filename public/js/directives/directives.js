@@ -35,7 +35,7 @@ angular.module( "GamifyDevMountain" )
 
 .directive( "headerDir", function () {
   return {
-    templateUrl: './../html/templates/headerTmpl.html',
+    templateUrl: './../html/templates/headerTemplate.html',
     controller: 'headerCtrl',
     restrict: 'E'
   }
